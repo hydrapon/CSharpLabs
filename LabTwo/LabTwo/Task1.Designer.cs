@@ -44,6 +44,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panelForPaint = new System.Windows.Forms.FlowLayoutPanel();
             this.ClearButton = new System.Windows.Forms.Button();
+            this.ChangeColorGradient = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ChangeColorBlack
@@ -159,7 +160,7 @@
             this.SelectedСolor.BackColor = System.Drawing.Color.Black;
             this.SelectedСolor.Location = new System.Drawing.Point(12, 159);
             this.SelectedСolor.Name = "SelectedСolor";
-            this.SelectedСolor.Size = new System.Drawing.Size(20, 20);
+            this.SelectedСolor.Size = new System.Drawing.Size(87, 23);
             this.SelectedСolor.TabIndex = 12;
             this.SelectedСolor.UseVisualStyleBackColor = false;
             // 
@@ -201,11 +202,23 @@
             this.ClearButton.UseVisualStyleBackColor = true;
             this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
+            // ChangeColorGradient
+            // 
+            this.ChangeColorGradient.BackColor = System.Drawing.Color.Azure;
+            this.ChangeColorGradient.Location = new System.Drawing.Point(12, 105);
+            this.ChangeColorGradient.Name = "ChangeColorGradient";
+            this.ChangeColorGradient.Size = new System.Drawing.Size(72, 23);
+            this.ChangeColorGradient.TabIndex = 17;
+            this.ChangeColorGradient.Text = "Градиент";
+            this.ChangeColorGradient.UseVisualStyleBackColor = false;
+            this.ChangeColorGradient.Click += new System.EventHandler(this.SelectColor_Click);
+            // 
             // Task1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1042, 450);
+            this.Controls.Add(this.ChangeColorGradient);
             this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.panelForPaint);
             this.Controls.Add(this.label1);
@@ -246,5 +259,6 @@
         private Label label1;
         private FlowLayoutPanel panelForPaint;
         private Button ClearButton;
+        private Button ChangeColorGradient;
     }
 }

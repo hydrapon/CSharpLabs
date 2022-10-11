@@ -17,6 +17,7 @@ namespace LabTwo
         private readonly int _sideLength = 20;
         private readonly int _countRays = 8;
         private readonly int _width = 5;
+
         public Task2()
         {
             InitializeComponent();
