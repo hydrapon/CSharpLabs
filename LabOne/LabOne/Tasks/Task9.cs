@@ -8,7 +8,7 @@ namespace LabOne.Tasks
 {
     internal class Task9
     {
-        private string[] _monthsNames = {"Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"};
+        private readonly string[] _monthsNames = {"Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"};
         public void start()
         {
             Console.Write("Введите день: ");
