@@ -16,7 +16,7 @@ namespace LabTwo
     {
         private readonly Graphics g;
         private readonly Random r = new Random();
-        private int[,] points = new int[3, 2];
+        private readonly int[,] points = new int[3, 2];
         private int countClick = 0;
         private readonly int lineWidth = 3;
 
