@@ -30,6 +30,7 @@
         {
             this.menuBtnTask1 = new System.Windows.Forms.Button();
             this.MenuLable = new System.Windows.Forms.Label();
+            this.menuBtnTask2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // menuBtnTask1
@@ -53,11 +54,23 @@
             this.MenuLable.TabIndex = 1;
             this.MenuLable.Text = "Меню";
             // 
+            // menuBtnTask2
+            // 
+            this.menuBtnTask2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.menuBtnTask2.Location = new System.Drawing.Point(123, 72);
+            this.menuBtnTask2.Name = "menuBtnTask2";
+            this.menuBtnTask2.Size = new System.Drawing.Size(80, 60);
+            this.menuBtnTask2.TabIndex = 2;
+            this.menuBtnTask2.Text = "Задача 2";
+            this.menuBtnTask2.UseVisualStyleBackColor = true;
+            this.menuBtnTask2.Click += new System.EventHandler(this.menuBtnTask2_Click);
+            // 
             // menuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.menuBtnTask2);
             this.Controls.Add(this.MenuLable);
             this.Controls.Add(this.menuBtnTask1);
             this.Name = "menuForm";
@@ -71,5 +84,6 @@
 
         private Button menuBtnTask1;
         private Label MenuLable;
+        private Button menuBtnTask2;
     }
 }
