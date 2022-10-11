@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "Task4";
             this.Text = "Task4";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Task4_FormClosing);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Task4_MouseDown);
             this.ResumeLayout(false);
 

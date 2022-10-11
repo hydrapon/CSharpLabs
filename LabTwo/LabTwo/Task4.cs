@@ -19,7 +19,7 @@ namespace LabTwo
         private int[,] points = new int[3, 2];
         private int countClick = 0;
         private readonly int lineWidth = 3;
-        
+
         public Task4()
         {
             InitializeComponent();
@@ -45,5 +45,11 @@ namespace LabTwo
                 this.countClick = 0;
             }
         }
+
+        private void Task4_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            g.Dispose();
+        }
+
     }
 }

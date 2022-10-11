@@ -13,12 +13,12 @@ namespace LabTwo
     public partial class Task3 : Form
     {
         private readonly Random r = new Random();
-        private readonly Graphics Graph;
+        private readonly Graphics g;
 
         public Task3()
         {
             InitializeComponent();
-            this.Graph = CreateGraphics();
+            this.g = CreateGraphics();
         }
 
         private void Task3_MouseDown(object sender, MouseEventArgs e)
@@ -29,8 +29,13 @@ namespace LabTwo
             Color fillColor = Color.FromArgb(r.Next(256), r.Next(256), r.Next(256));
             Pen pen = new Pen(borderColor, borderWith);
 
-            Graph.DrawEllipse(pen, e.X - radius / 2, e.Y - radius / 2, radius, radius);
-            Graph.FillEllipse(new SolidBrush(fillColor), e.X - radius / 2, e.Y - radius / 2, radius, radius);
+            g.DrawEllipse(pen, e.X - radius / 2, e.Y - radius / 2, radius, radius);
+            g.FillEllipse(new SolidBrush(fillColor), e.X - radius / 2, e.Y - radius / 2, radius, radius);
+        }
+
+        private void Task3_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            g.Dispose();
         }
     }
 }
