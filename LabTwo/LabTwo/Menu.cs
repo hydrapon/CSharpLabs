@@ -18,5 +18,11 @@ namespace LabTwo
             Task2 task = new Task2();
             task.Show(this);
         }
+
+        private void menuBtnTask3_Click(object sender, EventArgs e)
+        {
+            Task3 task = new Task3();
+            task.Show(this);
+        }
     }
 }
